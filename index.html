@@ -22,9 +22,15 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
 
-       body {
-  background-color: #0f3822; /* Change background to white */
-  color: #ffffff;            /* Change text to black */
+      :root {
+  --bg-color: #092615;
+  --text-main: #ffffff;
+  --border-color: rgba(255, 255, 255, 0.12); /* Keeps background grid dots soft and subtle */
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
