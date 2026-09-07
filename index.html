@@ -181,21 +181,41 @@
             </div>
 
             <!-- Lead Capture Form -->
-            <div class="card">
-                <h2>✉️ Get in Touch</h2>
-                <form id="contactForm">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea rows="3" placeholder="How can we assist you?" required></textarea>
-                    </div>
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
+            <form action="https://formspree.io/f/xyeynjzb" method="POST" class="space-y-4">
+  <div>
+    <input 
+      type="text" 
+      name="name" 
+      placeholder="Your Name" 
+      required 
+      class="w-full p-3 rounded bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-blue-500"
+    />
+  </div>
+  <div>
+    <input 
+      type="email" 
+      name="email" 
+      placeholder="Your Email" 
+      required 
+      class="w-full p-3 rounded bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-blue-500"
+    />
+  </div>
+  <div>
+    <textarea 
+      name="message" 
+      rows="4" 
+      placeholder="How can we assist you?" 
+      required 
+      class="w-full p-3 rounded bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-blue-500"
+    ></textarea>
+  </div>
+  <button 
+    type="submit" 
+    class="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded transition-colors"
+  >
+    Send Message
+  </button>
+</form>
         </div>
     </div>
 
