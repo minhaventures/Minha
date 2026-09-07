@@ -6,13 +6,14 @@
     <title>Minha Ventures | Coming Soon</title>
     <style>
         :root {
-            --bg-color: #0d1117;
-            --card-bg: #161b22;
-            --border-color: #30363d;
-            --text-main: #f0f6fc;
-            --text-muted: #8b949e;
-            --accent-color: #2f81f7;
-            --accent-hover: #58a6ff;
+  --bg-color: #092615;          /* Deep Forest Green Background */
+  --card-bg: #0d381e;           /* Card & Input Background (slightly lighter green) */
+  --text-main: #ffffff;         /* Main Headings & Body Text */
+  --text-muted: #e2e8f0;        /* Subtext, Labels & Placeholders */
+  --border-color: rgba(255, 255, 255, 0.15); /* Soft Borders & Grid Dots */
+  --accent-color: #16a34a;      /* Button Color (Vibrant Green) */
+  --accent-hover: #15803d;      /* Button Hover Color */
+}
         }
 
         * {
@@ -178,7 +179,8 @@ Need immediate assistance? Please fill out the form below, or reach our trade de
                 <h2>📍 Contact Us</h2>
                 <ul class="info-list">
                     <li><strong>Address:</strong><br>715, 7th Floor,Spencer Plaza, Anna Salai, Chennai, Tamil Nadu, India</li>
-                    <li><strong>Email:</strong><br><a href="mailto:contact@minhaventures.com & CC: minhaventures@gmail.com" style="color: var(--accent-color); text-decoration: none;">contact@minhaventures.com</a></li>
+                    <li><strong>Email:</strong><br><a href="mailto:contact@minhaventures.com
+                                                       minhaventures@gmail.com" style="color: var(--accent-color); text-decoration: none;">contact@minhaventures.com</a></li>
                     <li><strong>Phone:</strong><br>Call / WhatsApp: +91 9500140141 / 7867875692</li>
                     <li><strong>Services:</strong><br>Customized Sourcing • Global EXIM • Integrated Logistics</li>
                 </ul>
@@ -236,3 +238,36 @@ Need immediate assistance? Please fill out the form below, or reach our trade de
     </script>
 </body>
 </html>
+/* Card Containers (Contact Us & Form boxes) */
+.card, .container-box {
+  background-color: var(--card-bg) !important;
+  color: var(--text-main) !important;
+  border: 1px solid var(--border-color);
+}
+
+/* Paragraphs & Labels inside cards */
+p, span, label, li {
+  color: var(--text-muted) !important;
+}
+
+/* Inputs & Textarea */
+input, textarea {
+  background-color: #061a0e !important;
+  color: #ffffff !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #a1a1aa !important; /* High-contrast placeholder text */
+}
+
+/* Button */
+button, input[type="submit"] {
+  background-color: var(--accent-color) !important;
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: var(--accent-hover) !important;
+}
